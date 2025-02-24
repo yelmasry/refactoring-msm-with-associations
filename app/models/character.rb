@@ -10,4 +10,6 @@
 #  movie_id   :integer
 #
 class Character < ApplicationRecord
+  belongs_to(:actor, foreign_key: "actor_id", class_name: "Actors")
+
 end
