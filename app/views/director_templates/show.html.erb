@@ -157,7 +157,9 @@
       </td>
 
       <td>
-        <%= Director.where({ :id => a_movie.director_id }).at(0).name %>
+        <%= #Director.where({ :id => a_movie.director_id }).at(0).name %>
+        <%= a_movie.director.name %>
+
       </td>
 
       <td>
